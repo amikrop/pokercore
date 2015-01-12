@@ -14,7 +14,6 @@ released under the MIT licensre.
 
 Example
 -------
-
 .. code-block:: python
 
     >>> from pokercore import Deck, Hand
