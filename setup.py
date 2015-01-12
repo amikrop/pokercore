@@ -5,7 +5,7 @@ with open('README') as readme:
 
 setup(
     name='pokercore',
-    version='0.1.3',
+    version='0.1.4',
     description='A poker engine core, in Python',
     long_description=long_description,
     author='Aristotelis Mikropoulos',

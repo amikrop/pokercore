@@ -32,6 +32,8 @@ class Deck(object):
         """
 
         if n is None:
+            if not self.remaining:
+                raise DeckTooManyError('cannot draw more than remaining')
             return self.remaining.pop()
 
         if not isinstance(n, int):

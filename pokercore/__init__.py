@@ -25,7 +25,7 @@ True
 """
 
 __title__ = 'pokercore'
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 __author__ = 'Aristotelis Mikropoulos'
 
 from pokercore.exceptions import *
