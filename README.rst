@@ -1,6 +1,8 @@
 pokercore
+=========
 
 A poker engine core, in Python
+------------------------------
 
 pokercore provides 3 classes to be used in a poker engine.
 Card (a playing card), Hand (a poker hand consisting of Cards,
