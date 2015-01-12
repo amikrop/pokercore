@@ -10,7 +10,7 @@ setup(
     long_description=long_description,
     author='Aristotelis Mikropoulos',
     author_email='amikrop@gmail.com',
-    url='https://pypi.python.org/pypi/pokercore',
+    url='https://github.com/amikrop/pokercore',
     license='MIT',
     classifiers=[
         'Development Status :: 3 - Alpha',
