@@ -10,7 +10,7 @@ with evaluation capabilities) and *Deck* (a deck of Cards).
 
 It is a simple starter, mainly written for exploring purposes,
 but can be extended and/or used to build something bigger. It is
-released under the MIT licensre.
+released under the MIT license.
 
 Example
 -------
