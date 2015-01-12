@@ -9,6 +9,19 @@ with evaluation capabilities) and Deck (a deck of Cards).
 Its is a simple starter, mainly written for exploring purposes,
 but can be extended and/or used to build something bigger. It is
 released under the MIT license.
+
+Example
+
+>>> from pokercore import Deck, Hand
+>>> deck = Deck()
+>>> first = Hand(deck.draw(5))
+>>> first
+Hand(one pair: Card(9c), Card(9h), Card(Ac), Card(Jh), Card(2h))
+>>> second = Hand(deck.draw(5))
+>>> second
+Hand(high card: Card(As), Card(Kc), Card(9s), Card(7h), Card(4h))
+>>> first > second
+True
 """
 
 __title__ = 'pokercore'
