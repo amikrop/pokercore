@@ -21,11 +21,11 @@ class Card(object):
 
     def __init__(self, rank, suit):
         if rank not in xrange(13):
-            raise CardCreationError('card rank must lie between'
+            raise CardCreationError('card rank must lie between '
                                     '0 and 12, inclusive')
 
         if suit not in xrange(4):
-            raise CardCreationError('card suit must lie between'
+            raise CardCreationError('card suit must lie between '
                                     '0 and 3, inclusive')
 
         self.rank = rank
@@ -41,7 +41,7 @@ class Card(object):
         if isinstance(other, Card):
             return self.rank + other.rank
 
-        raise CardArithmeticError('cards can only be added'
+        raise CardArithmeticError('cards can only be added '
                                   'to cards and integers')
 
     __radd__ = __add__
@@ -53,7 +53,7 @@ class Card(object):
         if isinstance(other, Card):
             return self.rank - other.rank
 
-        raise CardArithmeticError('cards can only be subtracted'
+        raise CardArithmeticError('cards can only be subtracted '
                                   'by cards and integers')
 
     def __rsub__(self, other):
@@ -63,7 +63,7 @@ class Card(object):
         if isinstance(other, Card):
             return other.rank - self.rank
 
-        raise CardArithmeticError('cards can only subtract'
+        raise CardArithmeticError('cards can only subtract '
                                   'cards and integers')
 
     def __cmp__(self, other):
@@ -73,12 +73,12 @@ class Card(object):
         if isinstance(other, int):
             return cmp(self.rank, other)
 
-        raise CardComparisonError('cards can only be compared'
+        raise CardComparisonError('cards can only be compared '
                                   'to cards and integers')
 
     def identical_to(self, other):
         if not isinstance(other, Card):
-            raise CardComparisonError('cannot identity-check card'
+            raise CardComparisonError('cannot identity-check card '
                                       'with non-card')
 
         return (self.rank, self.suit) == (other.rank, other.suit)
